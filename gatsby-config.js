@@ -1,10 +1,14 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
+const config = require("./src/config");
 
 module.exports = {
-  /* Your site config here */
-  plugins: [],
+  siteMetadata:{
+    title: config.siteTitle,
+    description: config.siteDescription,
+    siteUrl:config.siteUrl,
+    media: config.socialMedia
+  },
+  plugins: [
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-styled-components`,
+  ],
 }
