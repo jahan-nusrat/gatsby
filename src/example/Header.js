@@ -10,9 +10,9 @@ const StyleBtn=styled.button`
 
 //***************Alternative
 // const query=graphql`
-//     {
+//     query GetData {  //query GetData(should be unique)
 //         site{
-//             siteMetadata{
+//             info: siteMetadata{  //info is used as an alias of siteMetadata
 //                 title
 //                 description
 //                 siteUrl
@@ -30,7 +30,7 @@ const Header = () => {
     const data = useStaticQuery(graphql`
         {
             site {
-                siteMetadata {
+                info: siteMetadata {
                     title
                     description
                     siteUrl
@@ -42,7 +42,7 @@ const Header = () => {
             }
         }
     `)
-    const {site:{siteMetadata:{description,media}}} = data;
+    const {site:{info:{description,media}}} = data;
     return (
         <div className="container mt-4">
             <p>{description}</p>

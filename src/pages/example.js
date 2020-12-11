@@ -2,6 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import Layout from '../components/Layout'
 import Header from '../example/Header'
+import HeaderStatic from '../example/HeaderStatic'
 
 const example = () => {
     return (
@@ -11,6 +12,7 @@ const example = () => {
             </Helmet>
             <h2 className="text-center">I am from Example page</h2>
             <Header />
+            <HeaderStatic />
         </Layout>
     )
 }
