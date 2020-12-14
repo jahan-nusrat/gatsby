@@ -14,6 +14,7 @@ const Nav = () => {
                     <Link className="nav-link text-danger" to="/blog">Blog</Link>
                     <Link className="nav-link text-danger" to="/product">Product</Link>
                     <Link className="nav-link text-danger" to="/example">Example</Link>
+                    <Link className="nav-link text-danger" to="/image">Image</Link>
                 </div>
             </div>
         </nav>
