@@ -2,6 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet';
 import Layout from '../components/Layout';
 import ProductCard from '../components/ProductCard';
+import {graphql} from 'gatsby';
 
 const product = ({data}) => {
     const {allContentfulProducts:{nodes:products}} = data;
